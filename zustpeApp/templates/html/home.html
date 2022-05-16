@@ -1,0 +1,18 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %} 
+{% block content %}
+<div class="container">
+    <center><h1>Cities Images</h1></center>
+    <table class="table table-borderless table-responsive">
+        <tr>
+            <td><img src="{% static 'img/c1.jpg' %}" height="500px" width="550px"></td>
+            <td><img src="{% static 'img/c2.jpg' %}" height="500px" width="550px"></td>
+        </tr>
+        <tr>
+            <td><img src="{% static 'img/c3.jpg' %}" height="500px" width="550px"></td>
+            <td><img src="{% static 'img/c4.jpg' %}" height="500px" width="550px"></td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
